@@ -1,0 +1,8 @@
+{
+  "name": "Remix The Ellis on Solon",
+  "description": "Official website for The Ellis on Solon luxury apartments in Waxahachie, TX featuring floor plans, amenities, interactive photo gallery, neighborhood guide, leasing specials, and online applications.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

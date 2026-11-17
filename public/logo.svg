@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 380" width="1200" height="380">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&amp;display=swap');
+      .serif-title {
+        font-family: 'Cinzel', 'Playfair Display', 'Didot', 'Bodoni MT', serif;
+        font-size: 86px;
+        font-weight: 600;
+        fill: #FAF0D7;
+        letter-spacing: 0.19em;
+      }
+      .serif-sub {
+        font-family: 'Cinzel', 'Playfair Display', 'Didot', 'Bodoni MT', serif;
+        font-size: 68px;
+        font-weight: 500;
+        fill: #FAF0D7;
+        letter-spacing: 0.54em;
+      }
+    </style>
+  </defs>
+
+  <!-- Deep Slate Navy Background from the uploaded brand logo -->
+  <rect width="1200" height="380" fill="#233242" />
+
+  <!-- Monogram Emblem 'E' -->
+  <g transform="translate(85, 75)">
+    <!-- Base Solid Cream Architectural Block -->
+    <rect x="0" y="0" width="210" height="230" fill="#FAF0D7" />
+
+    <!-- Upper Diamond (Rhombus) Cutout in Navy -->
+    <polygon points="18,63 95,28 172,63 95,98" fill="#233242" />
+
+    <!-- Upper Right Angled Opening in Navy -->
+    <polygon points="172,63 211,46 211,80" fill="#233242" />
+
+    <!-- Lower Diamond (Rhombus) Cutout in Navy -->
+    <polygon points="18,167 95,132 172,167 95,202" fill="#233242" />
+
+    <!-- Lower Right Angled Opening in Navy -->
+    <polygon points="172,167 211,150 211,184" fill="#233242" />
+  </g>
+
+  <!-- Brand Typography -->
+  <!-- Top Line: THE ELLIS -->
+  <text x="345" y="172" class="serif-title">THE ELLIS</text>
+
+  <!-- Bottom Line: ON SOLON -->
+  <text x="345" y="285" class="serif-sub">ON SOLON</text>
+</svg>

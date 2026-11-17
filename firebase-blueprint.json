@@ -1,0 +1,138 @@
+{
+  "entities": {
+    "propertyContent": {
+      "title": "Property Content",
+      "description": "Live property content including gallery items, floor plans, amenities, categories, neighborhood destinations, and coupons.",
+      "type": "object",
+      "properties": {
+        "updatedAt": {
+          "type": "string",
+          "description": "ISO timestamp of last update"
+        },
+        "propertyInfo": {
+          "type": "object",
+          "description": "Contact info, address, hours, and policies"
+        },
+        "floorPlans": {
+          "type": "array",
+          "description": "List of available floor plans and pricing"
+        },
+        "amenities": {
+          "type": "array",
+          "description": "List of community and apartment amenities with photos"
+        },
+        "galleryItems": {
+          "type": "array",
+          "description": "Photo gallery items with images and captions"
+        },
+        "galleryCategories": {
+          "type": "array",
+          "description": "Dynamic categories for the photo gallery"
+        },
+        "neighborhoodSpots": {
+          "type": "array",
+          "description": "Waxahachie neighborhood destinations with drive times and photos"
+        },
+        "specialOffers": {
+          "type": "array",
+          "description": "Move-in specials and discount coupons"
+        },
+        "communityVideos": {
+          "type": "array",
+          "description": "List of community videos, walkthroughs, drone aerials, and chapter markers"
+        }
+      },
+      "required": ["updatedAt"]
+    },
+    "enquiry": {
+      "title": "Customer Enquiry",
+      "description": "Visitor tour scheduling and contact enquiries with server email notification delivery tracking.",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique Enquiry ID (e.g., ENQ-...)"
+        },
+        "createdAt": {
+          "type": "string",
+          "description": "ISO timestamp of enquiry submission"
+        },
+        "customerName": {
+          "type": "string",
+          "description": "Full name of the customer"
+        },
+        "phone": {
+          "type": "string",
+          "description": "Contact phone number"
+        },
+        "email": {
+          "type": "string",
+          "description": "Optional customer email address"
+        },
+        "enquiryType": {
+          "type": "string",
+          "description": "Type of enquiry (Tour Request, Quick Message, General Enquiry)"
+        },
+        "service": {
+          "type": "string",
+          "description": "Requested service or tour format"
+        },
+        "preferredDate": {
+          "type": "string",
+          "description": "Preferred tour date if applicable"
+        },
+        "preferredTime": {
+          "type": "string",
+          "description": "Preferred tour time slot if applicable"
+        },
+        "floorPlanInterest": {
+          "type": "string",
+          "description": "Interested floor plan name or code"
+        },
+        "message": {
+          "type": "string",
+          "description": "Customer message, questions, or notes"
+        },
+        "location": {
+          "type": "string",
+          "description": "Property location"
+        },
+        "status": {
+          "type": "string",
+          "description": "Review status (new, contacted, scheduled, closed)"
+        },
+        "emailStatus": {
+          "type": "string",
+          "description": "Email delivery status (pending, sent, failed)"
+        },
+        "emailRecipient": {
+          "type": "string",
+          "description": "Target recipient for notification (e.g. ellisonsolon@gmail.com)"
+        },
+        "emailError": {
+          "type": "string",
+          "description": "Error details if email notification failed"
+        },
+        "emailSentAt": {
+          "type": "string",
+          "description": "ISO timestamp when email was accepted by provider"
+        },
+        "emailAttempts": {
+          "type": "number",
+          "description": "Number of delivery attempts made"
+        }
+      },
+      "required": ["id", "createdAt", "customerName", "phone", "enquiryType", "status", "emailStatus"]
+    }
+  },
+  "firestore": {
+    "/property_content/{contentId}": {
+      "schema": "propertyContent",
+      "description": "Public read and managed write content for The Ellis on Solon"
+    },
+    "/enquiries/{enquiryId}": {
+      "schema": "enquiry",
+      "description": "Customer enquiries and tour booking requests"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 350" width="1000" height="350">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&amp;family=Playfair+Display:wght@500;600;700&amp;display=swap');
+      .brand-title {
+        font-family: "Cinzel", "Playfair Display", "Didot", "Bodoni MT", "Georgia", serif;
+        font-size: 76px;
+        font-weight: 600;
+        fill: #FAF0D7;
+        letter-spacing: 0.22em;
+      }
+      .brand-sub {
+        font-family: "Cinzel", "Playfair Display", "Didot", "Bodoni MT", "Georgia", serif;
+        font-size: 58px;
+        font-weight: 600;
+        fill: #FAF0D7;
+        letter-spacing: 0.62em;
+      }
+    </style>
+  </defs>
+
+  <!-- Dark Navy Background -->
+  <rect width="1000" height="350" fill="#233242" />
+
+  <!-- Monogram Emblem 'E' -->
+  <g transform="translate(70, 72)">
+    <!-- Base Cream Block -->
+    <rect x="0" y="0" width="175" height="206" fill="#FAF0D7" />
+
+    <!-- Top Navy Diamond / Facet Cutout -->
+    <polygon points="175,46 142,46 72,66 2,103 72,140 142,160 175,160" fill="#233242" />
+
+    <!-- Actually let's refine the exact faceted diamond cutouts -->
+  </g>
+</svg>
